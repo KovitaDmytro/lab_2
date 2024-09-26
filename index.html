@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Довідник з мови C++</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,6 +17,11 @@
                 <li><a href="operators.html">Оператори</a></li>
                 <li><a href="functions.html">Функції</a></li>
                 <li><a href="contact.html">Контакти</a></li>
+                <li><select onchange="changeLanguage(this.value)">
+                    <option value="index.html">UA</option>
+                    <option value="index.en.html">EN</option>
+                  </select>
+                </li>
             </ul>
         </nav>
     </header>
@@ -24,7 +30,10 @@
     <section>
         <h2>Ласкаво просимо!</h2>
         <p>Цей сайт містить довідкову інформацію з мови програмування C++.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Introduction" width="200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" id="C++ Introduction" style="width:200px;" 
+        onmouseover="this.style.width='200px';" 
+        onmouseout="this.style.width='150px';">
+          
     </section>
     </div>
     <footer>

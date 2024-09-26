@@ -28,12 +28,26 @@ header{
     font-size: 1.6em;
 }
 
-.nav-1 li a{
+.nav-1 li a {
     color: aliceblue;
     text-decoration: none;
 }
 
-.nav-1 li a:hover{
+.nav-1 li select{
+    background-color: blueviolet;
+    border: none;
+    font-size: 0.9em;
+    border-radius: 10px;
+    color: rgb(238, 0, 247);
+    padding: 3px;
+}
+
+.nav-1 li a, .nav-1 li option{
+    color: rgb(238, 0, 247);
+    text-decoration: none;
+}
+
+.nav-1 li a:hover,.nav-1 li option:hover {
     color: aqua;
 }
 

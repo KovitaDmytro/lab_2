@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in C++</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.en.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basics.en.html">Basics</a></li>
+                <li><a href="syntax.en.html">Syntax</a></li>
+                <li><a href="operators.en.html">Operators</a></li>
+                <li><a href="functions.en.html">Functions</a></li>
+                <li><a href="contact.en.html">Contact</a></li>
+                <li>
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="operators.en.html">EN</option>
+                        <option value="operators.html">UA</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="div-all">
+        <h1>Operators in C++</h1>
+        <section>
+            <h2>Operators in C++</h2>
+            <p>C++ has various types of operators:</p>
+            <ul>
+                <li>Arithmetic: +, -, *, /</li>
+                <li>Logical: &&, ||, !</li>
+                <li>Comparison: ==, !=, >, <</li>
+            </ul>
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" value="15">
+            <br>
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" value="5">
+            
+            <!-- Button to perform calculations -->
+            <button onclick="calculate()">Calculate</button>
+            
+            <!-- Output results -->
+            <div id="results"></div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 C++ Language Reference</p>
+    </footer>
+</body>
+</html>

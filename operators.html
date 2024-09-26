@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оператори C++</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,6 +17,11 @@
                 <li><a href="operators.html">Оператори</a></li>
                 <li><a href="functions.html">Функції</a></li>
                 <li><a href="contact.html">Контакти</a></li>
+                <li><select onchange="changeLanguage(this.value)">
+                    <option value="operators.html">UA</option>
+                    <option value="operators.en.html">EU</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
@@ -27,8 +33,19 @@
         <ul>
             <li>Арифметичні: +, -, *, /</li>
             <li>Логічні: &&, ||, !</li>
-            <li>Оператори порівняння: ==, !=, >, <</li>
+            <li>Оператори порівняння: ==, !=, >, < </li>
         </ul>
+        <label for="num1">Перше число:</label>
+    <input type="number" id="num1" value="15">
+    <br>
+    <label for="num2">Друге число:</label>
+    <input type="number" id="num2" value="5">
+    
+    <!-- Кнопка для виконання обчислень -->
+    <button onclick="calculate()">Обчислити</button>
+    
+    <!-- Вивід результатів -->
+    <div id="results"></div>
     </section>
     </div>
     <footer>
