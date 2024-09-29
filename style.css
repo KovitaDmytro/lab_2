@@ -7,8 +7,6 @@
 body{
     background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(82,71,138,1) 50%, rgba(0,125,151,1) 100%);
     background-repeat: no-repeat;
-    
-    background-attachment: fixed;
 }
 
 header{
@@ -83,7 +81,7 @@ div.div-all-end{
 footer{
     background-color: #030032;
     padding: 2rem;
+    margin-top: 2rem;
     text-align: center;
-    margin-top: 18rem;
     color: aliceblue;
 }

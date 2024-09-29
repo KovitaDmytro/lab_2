@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Синтаксис C++</title>
+    <title>Синтаксис JavaScript</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/script.js"></script>
 </head>
@@ -19,16 +19,17 @@
                 <li><a href="contact.html">Контакти</a></li>
                 <li><select onchange="changeLanguage(this.value)">
                     <option value="syntax.html">UA</option>
-                    <option value="syntax.en.html">EU</option>
+                    <option value="syntax.en.html">EN</option>
                   </select>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="div-all"><h1>Синтаксис C++</h1>
+    <div class="div-all">
+        <h1>Синтаксис JavaScript</h1>
     <section>
-        <h2>Синтаксис C++</h2>
-        <p>Мова C++ має чіткий синтаксис, що включає:</p>
+        <h2>Синтаксис JavaScript</h2>
+        <p>Мова JavaScript має простий і гнучкий синтаксис, що включає:</p>
         <ul>
             <li>Оголошення змінних</li>
             <li>Створення функцій</li>
@@ -42,8 +43,8 @@
             </tr>
             <tr>
                 <td>Оголошення змінної</td>
-                <td>тип ім'я;</td>
-                <td>int x;</td>
+                <td>let/const ім'я;</td>
+                <td>let x;</td>
             </tr>
             <tr>
                 <td>Присвоєння</td>
@@ -51,10 +52,22 @@
                 <td>x = 10;</td>
             </tr>
         </table>
+        <section id="examples">
+            <h2>Практичні приклади</h2>
+            <pre>
+                <code>
+// Приклад: Обчислення факторіалу
+function factorial(n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+                </code>
+            </pre>
+        </section>
     </section>
     </div>
-        <footer>
-        <p>&copy; 2024 Довідник з мови C++</p>
+    <footer>
+        <p>&copy; 2024 Довідник з мови JavaScript</p>
     </footer>
 </body>
 </html>
