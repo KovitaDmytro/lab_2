@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/script.en.js"></script>
 </head>
@@ -11,12 +11,12 @@
     <header>
         <nav>
             <ul class="nav-1">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.en.html">Home</a></li>
                 <li><a href="basics.en.html">Basics</a></li>
                 <li><a href="syntax.en.html">Syntax</a></li>
                 <li><a href="operators.en.html">Operators</a></li>
                 <li><a href="functions.en.html">Functions</a></li>
-                <li><a href="contact.en.html">Contact Us</a></li>
+                <li><a href="contact.en.html">Contact</a></li>
                 <li>
                     <select onchange="changeLanguage(this.value)">
                         <option value="contact.en.html">EN</option>
@@ -24,22 +24,61 @@
                     </select>
                 </li>
             </ul>
+            <!-- Іконка меню -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div> 
         </nav>
     </header>
+
     <div class="div-all-end">
-        <h1>Contact Us</h1>
+        <h2>Contacts</h2>
+
         <section>
-            <h2>Get in Touch</h2>
-            <p>You can reach us through the following channels:</p>
+            <h2>Contact Us</h2>
+            <p>You can contact us through the following channels:</p>
             <ul>
                 <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
                 <li>Phone: +1 234 567 890</li>
             </ul>
         </section>
+
+        <!-- Visitor Survey Form -->
+        <section class="section-contact">
+            <h2>Visitor Survey</h2>
+            <form id="surveyForm" onsubmit="return validateForm()">
+                <label>Your Gender:</label><br>
+                <input type="radio" name="gender" value="Male" required> Male<br>
+                <input type="radio" name="gender" value="Female"> Female<br><br>
+
+                <label>Your Interests:</label><br>
+                <input type="checkbox" name="interest" value="Programming"> Programming<br>
+                <input type="checkbox" name="interest" value="Design"> Design<br>
+                <input type="checkbox" name="interest" value="Art"> Art<br>
+                <input type="checkbox" name="interest" value="Sports"> Sports<br><br>
+
+                <label>Your Feedback:</label><br>
+                <textarea name="feedback" rows="5" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+
+        <!-- User Message Form -->
+        <section>
+            <h2>Message Form</h2>
+            <form action="mailto:dmitroleksienko04@gmail.com" method="post" enctype="text/plain">
+                <label>Your Message:</label><br>
+                <textarea name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 JavaScript Reference Guide</p>
+        <p>&copy; 2024 JavaScript Language Guide</p>
     </footer>
 </body>
 </html>

@@ -17,25 +17,66 @@
                 <li><a href="operators.html">Оператори</a></li>
                 <li><a href="functions.html">Функції</a></li>
                 <li><a href="contact.html">Контакти</a></li>
-                <li><select onchange="changeLanguage(this.value)">
-                    <option value="contact.html">UA</option>
-                    <option value="contact.en.html">EU</option>
-                  </select>
+                <li>
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="contact.html">UA</option>
+                        <option value="contact.en.html">EN</option>
+                    </select>
                 </li>
             </ul>
+            <!-- Іконка меню -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div> 
         </nav>
     </header>
+
     <div class="div-all-end">
         <h1>Контакти</h1>
-    <section>
-        <h2>Зв'язатися з нами</h2>
-        <p>Ви можете зв'язатися з нами через наступні канали:</p>
-        <ul>
-            <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
-            <li>Телефон: +1 234 567 890</li>
-        </ul>
-    </section>
-</div>
+
+        <section>
+            <h2>Зв'язатися з нами</h2>
+            <p>Ви можете зв'язатися з нами через наступні канали:</p>
+            <ul>
+                <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
+                <li>Телефон: +1 234 567 890</li>
+            </ul>
+        </section>
+
+        <!-- Форма опитування відвідувачів -->
+        <section class="section-contact">
+            <h2>Опитування відвідувачів сайту</h2>
+            <form id="surveyForm" onsubmit="return validateForm()">
+                <label>Ваша стать:</label><br>
+                <input type="radio" name="gender" value="Чоловік" required> Чоловік<br>
+                <input type="radio" name="gender" value="Жінка"> Жінка<br><br>
+
+                <label>Ваші інтереси:</label><br>
+                <input type="checkbox" name="interest" value="Програмування"> Програмування<br>
+                <input type="checkbox" name="interest" value="Дизайн"> Дизайн<br>
+                <input type="checkbox" name="interest" value="Мистецтво"> Мистецтво<br>
+                <input type="checkbox" name="interest" value="Спорт"> Спорт<br><br>
+
+                <label>Ваш відгук:</label><br>
+                <textarea name="feedback" rows="5" required></textarea><br><br>
+
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+
+        <!-- Форма повідомлення -->
+        <section>
+            <h2>Форма повідомлення</h2>
+            <form action="mailto:dmitroleksienko04@gmail.com" method="post" enctype="text/plain">
+                <label>Ваше повідомлення:</label><br>
+                <textarea name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Надіслати повідомлення</button>
+            </form>
+        </section>
+    </div>
+
     <footer>
         <p>&copy; 2024 Довідник з мови JavaScript</p>
     </footer>

@@ -47,3 +47,8 @@ function calculate() {
 function changeLanguage(languageUrl) {
     window.location.href = languageUrl;
 }
+
+function toggleMenu() {
+    var menu = document.querySelector('.nav-1');
+    menu.classList.toggle('active');
+}

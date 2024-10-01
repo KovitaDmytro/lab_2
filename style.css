@@ -5,12 +5,13 @@
 }
 
 body{
-    background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(82,71,138,1) 50%, rgba(0,125,151,1) 100%);
+    /*background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(82,71,138,1) 50%, rgba(0,125,151,1) 100%);*/
+    background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(40,9,226,1) 18%, rgba(42,3,243,1) 38%, rgba(13,86,130,1) 75%, rgba(0,125,151,1) 89%);
     background-repeat: no-repeat;
 }
 
 header{
-    margin-bottom: 5em;
+    margin-bottom: 1.5em;
 }
 
 .nav-1{
@@ -32,16 +33,16 @@ header{
 }
 
 .nav-1 li select{
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
     border: none;
     font-size: 0.9em;
     border-radius: 10px;
-    color: rgb(238, 0, 247);
+    color: rgb(0, 0, 0);
     padding: 3px;
 }
 
 .nav-1 li a, .nav-1 li option{
-    color: rgb(238, 0, 247);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -50,7 +51,7 @@ header{
 }
 
 .nav-1 li a:visited{
-    color: rgb(238, 0, 247);
+    color: rgb(255, 255, 255);
 }
 
 .nav-1 li a:visited:hover{
@@ -58,24 +59,55 @@ header{
 }
 
 div.div-all{
+    padding-top: 50px;
     width: 90%;
     margin: auto;
     color: aliceblue;
 }
 
-h1{
-    color: rgb(255, 255, 255);
-    padding: 1.6em;
+h1, h2{
+    color: #ffffff;
+   padding: 1,9em;
 }
 
-div.div-all-end{
-    width: 35%;
+.div-all-end{
+    width: 70%;
     margin: auto;
-    padding: 2em;
+    padding: 1.9em;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
-    background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(82,71,138,1) 38%, rgba(13,86,130,1) 75%, rgba(0,125,151,1) 100%);
+    background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(40,9,226,1) 18%, rgba(42,3,243,1) 38%, rgba(13,86,130,1) 75%, rgba(0,125,151,1) 89%);
+}
+
+.section-contact form{
+    width: 190px;
+    text-align: start;
+    margin: auto;
+}
+
+section ul li a{
+    color: black;
+}
+
+.section-contact form textarea,
+section form textarea{
+    resize: none;
+    border-radius: 10px;
+    border: #030032 2px solid;
+    padding: 10px;
+    background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(40,9,226,1) 18%, rgba(42,3,243,1) 38%, rgba(13,86,130,1) 75%, rgba(0,125,151,1) 89%);
+    color: rgb(255, 255, 255);
+}
+
+section form button,
+section button{
+    border: none;
+    background: orangered;
+    padding: 9px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer{
@@ -84,4 +116,73 @@ footer{
     margin-top: 2rem;
     text-align: center;
     color: aliceblue;
+}
+
+/* Іконка меню */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    top: 28px;
+    right: 35px;
+    color: #ffffff; /* Колір іконки */
+}
+
+/* Медіа-запит для мобільної версії */
+@media screen and (max-width: 889px) {
+    .nav-1 {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(152deg, rgba(3,0,50,1) 0%, rgba(40,9,226,1) 18%, rgba(42,3,243,1) 38%, rgba(13,86,130,1) 75%, rgba(0,125,151,1) 89%);
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 20%;
+        padding: 20px;
+        z-index: 999;
+        text-align: center;
+        color: #ffffff;
+        border: 2px solid white;
+        border-start-start-radius: 10px;
+        border-end-start-radius: 10px;
+    }
+
+    .nav-1.active {
+        display: flex;
+    }
+
+    .nav-1 li a:visited{
+        color: rgb(255, 255, 255);
+    }
+    
+
+    .nav-1 li {
+        margin: 10px 0;
+    }
+
+    .nav-1 a {
+        color: #fff; /* Колір тексту у мобільному меню */
+        font-size: 18px; /* Розмір шрифту */
+        text-align: center; /* Центрування тексту */
+    }
+
+    /* Відображаємо іконку меню на мобільних екранах */
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-1 li select{
+        background-color: rgb(255, 255, 255);
+        border: none;
+        font-size: 0.9em;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        padding: 3px;
+    }
+
+    .nav-1 li option{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
 }
