@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Синтаксис JavaScript</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png">
     <link rel="stylesheet" href="style.css">
     <script src="js/script.js"></script>
 </head>
@@ -55,17 +56,27 @@
                 <td>x = 10;</td>
             </tr>
         </table>
+        <br>
         <section id="examples">
-            <h2>Практичні приклади</h2>
-            <pre>
-                <code>
-// Приклад: Обчислення факторіалу
-function factorial(n) {
-    if (n <= 1) return 1;
-    return n * factorial(n - 1);
-}
-                </code>
-            </pre>
+            <div class="hero container flex-block-1">
+                <div class="suntaksis w-2block">
+                    <h2>Приклад JavaScript:</h2>
+                    <div class="w-3com">
+                    <h3>script.js</h3>
+                    <div class="pre-code">       
+    <pre><code><span class="attribute-value">// Вивід повідомлення у вікно браузера</span>
+    <span class="yellow-1">alert</span>(<span class="attribute-name">'Hello, world!'</span>);
+        
+    <span class="attribute-value">// Зміна тексту елемента</span>
+    <span class="blue-1">document</span><span class="yellow-1">.getElementById</span>(<span class="attribute-name">'myText'</span>).<span class="blue-1">innerHTML</span> = <span class="attribute-name">'New text'</span>;
+        
+    <span class="attribute-value">// Додавання події на кнопку</span>
+    <span class="blue-1">document</span><span class="yellow-1">.getElementById</span>(<span class="attribute-name">'myButton'</span>)<span class="yellow-1">.addEventListener</span>(<span class="attribute-name">'click'</span>, <span class="tag">function</span><span class="violet">() {</span>
+        <span class="yellow-1">alert</span>(<span class="attribute-name">'Button clicked!'</span>);
+    <span class="violet">}</span>);</code></pre>
+                    </div>
+                </div>
+            </div>
         </section>
     </section>
     </div>
@@ -73,4 +84,4 @@ function factorial(n) {
         <p>&copy; 2024 Довідник з мови JavaScript</p>
     </footer>
 </body>
-</html>
+</html>  

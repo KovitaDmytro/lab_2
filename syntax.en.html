@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Syntax</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png">
     <link rel="stylesheet" href="style.css">
-    <script src="js/script.en.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -17,61 +18,70 @@
                 <li><a href="operators.en.html">Operators</a></li>
                 <li><a href="functions.en.html">Functions</a></li>
                 <li><a href="contact.en.html">Contact</a></li>
-                <li>
-                    <select onchange="changeLanguage(this.value)">
-                        <option value="syntax.en.html">EN</option>
-                        <option value="syntax.html">UA</option>
-                    </select>
+                <li><select onchange="changeLanguage(this.value)">
+                    <option value="syntax.en.html">EN</option>
+                    <option value="syntax.html">UA</option>
+                  </select>
                 </li>
             </ul>
-            <!-- Іконка меню -->
+            <!-- Menu icon -->
             <div class="menu-icon" onclick="toggleMenu()">
                 &#9776;
             </div> 
         </nav>
     </header>
     <div class="div-all">
-        <section>
-            <h2>JavaScript Syntax</h2>
-            <p>The JavaScript language has a simple and flexible syntax that includes:</p>
-            <ul>
-                <li>Variable declarations</li>
-                <li>Function creation</li>
-                <li>Operator usage</li>
-            </ul>
-            <table border="1">
-                <tr>
-                    <th>Operation</th>
-                    <th>Syntax</th>
-                    <th>Example</th>
-                </tr>
-                <tr>
-                    <td>Variable Declaration</td>
-                    <td>let/const name;</td>
-                    <td>let x;</td>
-                </tr>
-                <tr>
-                    <td>Assignment</td>
-                    <td>name = value;</td>
-                    <td>x = 10;</td>
-                </tr>
-            </table>
-            <section id="examples">
-                <h2>Practical Examples</h2>
-                <pre>
-                    <code>
-// Example: Calculating factorial
-function factorial(n) {
-    if (n <= 1) return 1;
-    return n * factorial(n - 1);
-}
-                    </code>
-                </pre>
-            </section>
+    <section>
+        <h2>JavaScript Syntax</h2>
+        <p>JavaScript has a simple and flexible syntax, which includes:</p>
+        <ul>
+            <li>Variable declaration</li>
+            <li>Function creation</li>
+            <li>Using operators</li>
+        </ul>
+        <table border="1">
+            <tr>
+                <th>Operation</th>
+                <th>Syntax</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>Variable Declaration</td>
+                <td>let/const name;</td>
+                <td>let x;</td>
+            </tr>
+            <tr>
+                <td>Assignment</td>
+                <td>name = value;</td>
+                <td>x = 10;</td>
+            </tr>
+        </table>
+        <br>
+        <section id="examples">
+            <div class="hero container flex-block-1">
+                <div class="suntaksis w-2block">
+                    <h2>JavaScript Example:</h2>
+                    <div class="w-3com">
+                    <h3>script.js</h3>
+                    <div class="pre-code">       
+    <pre><code><span class="attribute-value">// Display message in browser window</span>
+    <span class="yellow-1">alert</span>(<span class="attribute-name">'Hello, world!'</span>);
+        
+    <span class="attribute-value">// Change text of an element</span>
+    <span class="blue-1">document</span><span class="yellow-1">.getElementById</span>(<span class="attribute-name">'myText'</span>).<span class="blue-1">innerHTML</span> = <span class="attribute-name">'New text'</span>;
+        
+    <span class="attribute-value">// Add event to a button</span>
+    <span class="blue-1">document</span><span class="yellow-1">.getElementById</span>(<span class="attribute-name">'myButton'</span>)<span class="yellow-1">.addEventListener</span>(<span class="attribute-name">'click'</span>, <span class="tag">function</span><span class="violet">() {</span>
+        <span class="yellow-1">alert</span>(<span class="attribute-name">'Button clicked!'</span>);
+    <span class="violet">}</span>);</code></pre>
+                    </div>
+                </div>
+            </div>
         </section>
+    </section>
     </div>
     <footer>
-        <p>&copy; 2024 JavaScript Reference Guide</p>
+        <p>&copy; 2024 JavaScript Guide</p>
     </footer>
 </body>
 </html>

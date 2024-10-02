@@ -42,7 +42,7 @@ header{
 }
 
 .nav-1 li a, .nav-1 li option{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -184,5 +184,177 @@ footer{
     .nav-1 li option{
         color: rgb(0, 0, 0);
         text-decoration: none;
+    }
+}
+
+/*-------------------------INFO------------------*/
+.hero{
+    padding-bottom: 2rem;
+}
+
+.hero--info{
+    width: 50%;
+    padding: 4rem 0;
+}
+
+.hero--info h2{
+    font-size: 1.9rem;
+}
+
+.hero .hero--info h2 svg{
+    position: relative;
+    top: 6px;
+}
+
+.button--info{
+    background-color: rgb(230, 111, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    transition: all 500ms ease;
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+
+.button--info:active{
+    background-color: rgb(255, 0, 0);
+}
+
+.button--info a{
+    color: #fff;
+}
+
+.button--info:hover{
+    transform: scale(1.1);
+}
+
+.suntaksis{
+    background-color: black;
+    width: max-content;
+    /*max-width: 100%;*/
+    border: gray solid 2px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.w-3com{
+   background-color: #ccc; 
+   width: 100%;
+   border-radius: 10px;
+   border: 1px solid black;
+}
+
+/*---------------------SUNTAKSIS-----------------------*/
+.suntaksis h2{
+    padding-bottom: 0.5rem;
+}
+
+.suntaksis h3{
+    padding: 1rem 1rem;
+    color: #000000;
+}
+
+.pre-code{
+    padding:0 1rem 1rem 1rem;
+}
+
+pre {
+    background-color: #000000;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code{
+    font-size: 0.97rem;
+    padding: 0rem;
+}
+
+.tag {
+     color: #0000FF; 
+}
+
+.attribute-name { 
+    color: #e00000; 
+}
+
+.attribute-value { 
+    color: #008000; 
+}
+
+.text { 
+    color: #ffffff; 
+}
+
+.p-h3{
+    width: 30%;
+    margin-left: 0.3rem;
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.p-h3-2{
+    width: 30%;
+    margin-left: 0.3rem;
+    text-align: center;
+    margin: auto;
+    padding-right:2rem ;
+}
+
+.w-2block{
+    display: inline-block;
+}
+
+.flex-block-1{
+    display: flex;
+}
+
+.flex-block-2{
+    display: flex;
+}
+
+.yellow-1{
+    color: yellow;
+}
+
+.green-1{
+    color: #76ff76;
+}
+
+.blue-1{
+    color: aqua;
+}
+
+.violet{
+    color: violet;
+}
+
+@media(max-width:1200px){
+    .hero--info{
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+    .suntaksis{
+       /* display: none;*/
+       max-width: 90%;
+    }
+    .p-h3{
+        width: 100%;
+        padding-top:0 ;
+        text-align: left;
+    }
+    .p-h3 h3{
+        font-size: 1rem;
+    }
+    .p-h3-2{
+        width: 100%;
+        padding-top:1rem ;
+        text-align: left;
+    }
+    .p-h3-2 h3{
+        font-size: 1rem;
     }
 }
